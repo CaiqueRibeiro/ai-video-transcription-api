@@ -16,6 +16,10 @@ app.register(uploadVideoRoute)
 app.register(createTranscriptionRoute)
 app.register(generateAICompletionRoute)
 
+app.get('/', function (request, reply) {
+  reply.send({ success: true })
+})
+
 
 
 app.listen({
